@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	leftrightencode "github.com/newbieDev-22/backend-challenge/left-right-encode"
+	leftrightencode "github.com/newbieDev-22/backend-challenge/left-right-decode"
 )
 
 func main() {
