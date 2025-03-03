@@ -1,0 +1,41 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: A service that provides summary statistics about beef-related text.
+  title: Beef Summary API
+  version: "1.0"
+paths:
+  /beef/summary:
+    get:
+      tags:
+        - beef
+      summary: Get beef text summary
+      description: Retrieves a summary of beef-related text including word count and statistics
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: Successfully retrieved beef summary
+          schema:
+            $ref: "#/definitions/model.SummaryBeef"
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+definitions:
+  model.SummaryBeef:
+    type: object
+    description: Response model containing beef word frequency counts
+    properties:
+      beef:
+        type: object
+        description: Map of beef-related words as keys and their frequencies as values
+        additionalProperties:
+          type: integer
+        example:
+          t-bone: 4
+          fatback: 1
+swagger: "2.0"
