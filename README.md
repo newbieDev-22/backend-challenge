@@ -35,7 +35,7 @@
 เลขคู่ถัดมาคือ 2 และ 3   => ตัวเลขซ้าย (2) น้อยกว่า ตัวเลขขวา (3)  => “R“
 เลขคู่ถัดมาคือ 3 และ 3   => ตัวเลขซ้าย (3) เท่ากับ ตัวเลขขวา (3)  => “=“
 
-“LLRR=” สามารถแปลงได้เป็น “410233” หรือ “210122“ ก็ได้ 
+
 ผลรวมตัวเลขทุกตัวของ 410233 = 4 + 1 + 0 + 2+. 3 + 3 = 13
 ผลรวมตัวเลขทุกตัวของ 210122 = 2 + 1 + 0 + 1 + 2 + 2  = 8
 คำตอบคือ เลขชุด 210122 เนื่องจาก ผลรวมของทุกตัวเลขมีค่าน้อยที่สุด
@@ -50,11 +50,11 @@
 - input = `=LLRR` output = `221012`
 - input = `RRL=R` output = `012001`
 
-## 3. พาย ไฟ ได - Pie Fire Dire  
+## 3. พาย ไฟ ได - Pie Fire Dire
 
 โจทย์คือ ให้รายชื่อของเนื้อหลายชนิด ปะปนกันเช่น
 
-```Fatback t-bone t-bone, pastrami  ..   t-bone.  pork, meatloaf jowl enim.  Bresaola t-bone.```
+`Fatback t-bone t-bone, pastrami  ..   t-bone.  pork, meatloaf jowl enim.  Bresaola t-bone.`
 
 `ทุกคำเป็นชื่อชนิดเนื้อทั้งหมด` โดยที่ไม่ต้องสนใจ , . หรือ space
 
@@ -72,15 +72,15 @@
 
 ```json
 {
-    "beef": {
-        "t-bone": 4,
-        "fatback": 1,
-        "pastrami": 1,
-        "pork": 1,
-        "meatloaf": 1,
-        "jowl": 1,
-        "enim": 1,
-        "bresaola": 1
-    }
+  "beef": {
+    "t-bone": 4,
+    "fatback": 1,
+    "pastrami": 1,
+    "pork": 1,
+    "meatloaf": 1,
+    "jowl": 1,
+    "enim": 1,
+    "bresaola": 1
+  }
 }
 ```
