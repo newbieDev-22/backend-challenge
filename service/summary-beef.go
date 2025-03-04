@@ -26,6 +26,7 @@ func processLine(line string) wordCountResult {
 	localCount := make(wordCountResult)
 	words := strings.Fields(line)
 	for _, word := range words {
+		word = strings.ToLower(word)
 		if word = strings.TrimSpace(word); word != "" {
 			localCount[word]++
 		}
