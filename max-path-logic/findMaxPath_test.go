@@ -32,10 +32,10 @@ func TestFindMaxPath(t *testing.T) {
 			name: "extreme case",
 			array2D: [][]int{
 				{1},
-				{1, 100000},
-				{1, -10000, 1},
+				{1, 2},
+				{1, -10000, 100000},
 			},
-			want: 100002,
+			want: 100003,
 		},
 	}
 
